@@ -75,9 +75,12 @@
     //const de = links.map( param => param.textContent)
     //const allWithDe = de.filter( param => (param.includes('de')))
     //console.table(allWithDe);
-    
+
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+
+    const lastAlpha = inventors.sort((param1,param2) => ((param1.last) > (param2.last) ? 1 : -1));
+    console.table(lastAlpha);
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
